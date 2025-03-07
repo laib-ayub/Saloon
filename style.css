@@ -1,0 +1,53 @@
+
+
+ /* Set fixed height for carousel */
+ #carouselExampleCaptions {
+    max-width: 100%;
+    height: 500px;
+}
+/* Ensure images fit properly */
+.carousel-img {
+    height: 500px;
+    object-fit: cover;
+}
+
+.carousel-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Darkens the image */
+    z-index: 1;
+}
+
+.carousel-caption {
+    padding: 15px;
+    border-radius: 8px;
+    z-index: 2;
+}
+
+.carousel-caption h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff; /* White text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.carousel-caption p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #f8f9fa;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.pink {
+  
+    border-bottom: 11px solid #ee8bc3;
+}
+
+.head a {
+    color: #ee8bc3;
+    text-decoration: none;
+}
